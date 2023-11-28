@@ -1,0 +1,381 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Maven Pro", sans-serif;
+  list-style-type: none;
+}
+/* ------------------------------ NAV BÖLÜMÜ-------------------- */
+.main-nav {
+  background-color: cadetblue;
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 100;
+  top: 0;
+  position: fixed;
+  width: 100%;
+}
+.nav-title h1 {
+  font-family: "Maven Pro", sans-serif;
+  font-weight: bolder;
+  font-size: 30px;
+  cursor: pointer;
+}
+.shop-text {
+  color: crimson;
+}
+.nav-links {
+  display: flex;
+  gap: 40px;
+  font-size: 18px;
+}
+.nav-links a {
+  color: black;
+}
+.nav-links a:hover {
+  color: crimson;
+}
+.nav-icons {
+  display: flex;
+  gap: 20px;
+  font-size: 18px;
+}
+.bi-person-fill:hover,
+.bi-basket:hover {
+  color: white;
+  cursor: pointer;
+}
+.bi-heart-fill:hover {
+  color: crimson;
+  cursor: pointer;
+}
+/* ----------------------------SECTION BASLANGIC-------------------- */
+.first-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-image: url(img/first-section-img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 700px;
+  margin-top: 120px;
+}
+.first-section-text {
+  margin-top: 100px;
+  margin-left: 120px;
+  width: 700px;
+  height: 430px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.first-section-text h1 {
+  font-size: 50px;
+}
+.first-section-text h3 {
+  font-size: 30px;
+}
+.first-section-text p {
+  font-size: 25px;
+}
+.first-section-btn {
+  padding: 20px;
+  width: 160px;
+  height: 30px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: crimson;
+  border: none;
+  margin-top: 10px;
+}
+.first-section-btn:hover {
+  color: white;
+  background-color: black;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+/* ----------------------------HAKKIMIZDA-------------------- */
+.hakkimizda {
+  background-color: #eeeeee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-top: 30px;
+  border-radius: 3px;
+}
+.hakkimizda2 {
+  display: flex;
+  justify-content: space-around;
+}
+.gif-div {
+  background: url(img/aboutUs.gif) no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 350px;
+  width: 40%;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 15px solid #fff5fa;
+  border-radius: 10px;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.3);
+}
+.gif-div-text {
+  background-color: white;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  mix-blend-mode: screen;
+  font-size: 30px;
+}
+.text-div {
+  width: 40%;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.text-div h1 {
+  font-size: 40px;
+}
+.text-div p {
+  font-size: 25px;
+}
+.text-div button {
+  width: 30%;
+  padding: 12px;
+  font-size: 15px;
+  border-radius: 10px;
+  border: none;
+  background-color: crimson;
+  cursor: pointer;
+}
+.text-div button:hover {
+  background-color: black;
+  color: white;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+/* ----------------------------KARGO SECENEGİ KART VS-------------------- */
+.option {
+  background-color: #eeeeee;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.option-package {
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  width: 30%;
+  border-radius: 5px;
+
+  margin-left: 10px;
+}
+.option-package:hover {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.icon {
+  font-size: 80px;
+}
+/* ----------------------------KİTAP KISMI-------------------- */
+.book-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.book-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 80px;
+  background-color: #eeeeee;
+}
+.book-header h1 {
+  font-size: 45px;
+}
+.books {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  justify-content: space-between;
+}
+.book-box {
+  background-color: white;
+  width: 45%;
+  height: 500px;
+  margin-top: 10px;
+  border: rgba(254, 223, 239, 0.63) 5px solid;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.book-box:hover .book-buttons {
+  display: flex;
+}
+.book-img {
+  position: relative;
+}
+.book-img img {
+  width: 250px;
+  position: relative;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.book-img img:hover,
+.buttons:hover {
+  transform: scale(0.9);
+}
+.book-buttons {
+  position: absolute;
+  bottom: 80px;
+  z-index: 100;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  box-sizing: border-box;
+  display: none;
+}
+.buttons {
+  width: 100%;
+  background-color: crimson;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.buttons:hover {
+  color: white;
+  background-color: black;
+}
+.book-specs {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.discount-text {
+  font-size: 13px;
+  color: crimson;
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+}
+/* -----------------------------MUSTERİ YORUMLARI KISMI----------------- */
+.comment-main {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.comment-head {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  background-color: #eeeeee;
+  font-size: 35px;
+}
+.comment-boxes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+.comment-box {
+  border: 5px solid #5f9ea0;
+  width: 35%;
+  font-size: 25px;
+  border-radius: 5px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.comment-box-icons {
+  color: crimson;
+}
+.customer {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+.customer-pp {
+  width: 20%;
+  height: 150px;
+  background: url(img/taxidriverpp.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 100%;
+}
+.customer-pp2 {
+  width: 20%;
+  height: 150px;
+  background: url(img/icecube.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 100%;
+}
+.customer-comment-icon {
+  font-size: 80px;
+  margin-left: 100px;
+}
+/* --------------------------FOOTER KISMI----------------------------- */
+.footer-main {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.info {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px;
+}
+.info li a {
+  color: black;
+}
+.info li a:hover {
+  color: crimson;
+  text-decoration: underline;
+}
+.line {
+  background-color: black;
+  width: 100%;
+  height: 2px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 40px;
+}
+.footer-text {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
